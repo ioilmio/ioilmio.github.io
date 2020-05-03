@@ -1,0 +1,41 @@
+$text-color: rgb(151, 151, 151);
+$animation-speed: 2s;
+$animation-delay: 1s;
+
+@mixin center($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+//   border: 1px solid red;
+}
+
+body {
+    background-color: rgb(71, 71, 71);
+}
+
+
+strong  {
+    color: rgb(192, 192, 192);
+}
+// nav {
+//     background-color: rgb(143, 39, 39);
+//   ul{
+//       background-color: rgb(46, 165, 31);
+//       display: flex;
+//       justify-content: center;
+//       list-style: none;
+//       li {
+//           background-color: rgb(32, 34, 129);
+//           color: #ffffff;
+//       }
+//   }
+// }

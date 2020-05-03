@@ -1,0 +1,92 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #474747;
+}
+
+strong {
+  color: silver;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.section h1 {
+  text-align: center;
+  font-size: 3rem;
+  z-index: 1;
+  font-family: "Ubuntu";
+  background: rgba(255, 255, 255, 0.507);
+  padding: 1rem;
+}
+
+.section .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.section .video-container video {
+  width: 100vw;
+  height: 100%;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.header article {
+  width: 20rem;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border: 1px solid;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.header article h2 {
+  color: #8b8b8b;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header article i {
+  color: yellow;
+}

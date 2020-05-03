@@ -1,0 +1,57 @@
+@import "config";
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    z-index: 1;
+    font-family: "Ubuntu";
+    background: rgba(255, 255, 255, 0.507);
+    padding: 1rem;
+    // margin: 2rem;
+  }
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    video {
+      width: 100vw;
+      height: 100%;
+    }
+  }
+}
+
+
+.header {
+  display: grid;
+    place-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  article {
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    //   text-align: center;
+    border: 1px solid;
+    padding: 2rem;
+    margin: 2rem;
+    h2 {
+      color: rgb(139, 139, 139);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    i {
+      color: yellow;
+    }
+  }
+}
