@@ -1,5 +1,6 @@
 $text-color: rgb(151, 151, 151);
-$bg-color: rgb(71, 71, 71);
+$bg-color: #474747;
+$dark-bg :rgb(0, 0, 0);
 
 @mixin center($direction, $align, $justify) {
   display: flex;
@@ -8,13 +9,26 @@ $bg-color: rgb(71, 71, 71);
   justify-content: $justify;
 }
 
+h2 {
+  color: $bg-color;
+  text-shadow: 1px 1px rgb(206, 206, 206);
+}
+
+.neumorphism {
+  border-radius: 21px;
+  background: linear-gradient(225deg, #4c4c4c, #404040);
+  box-shadow:
+    -9px 9px 17px #363636,
+    9px -9px 17px #585858;
+}
+
 *,
 ::after,
 ::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  // border: 1px solid red;
   overflow-x: hidden;
 }
 

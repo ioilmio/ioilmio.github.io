@@ -82,7 +82,7 @@ function drawParticles() {
 
 function draw() {
 
-    background(151,151,151);
+    background(0,0,0);
 
     drawParticles();
     particleBreakDistance = min(particleBreakDistance + 1, width / 12);

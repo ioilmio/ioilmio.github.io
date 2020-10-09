@@ -1,82 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio v0.2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio v0.1</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./dist/style.css" />
-</head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-item"><a href="#githubprofile"> Logo to github</a></div>
+      <div class="nav-item"><a href="#project"> Projects</a></div>
+      <div class="nav-item"><a href="#contact"> Contact</a></div>
+      <div class="nav-item"><a href="#about"> About </a></div>
+    </nav>
 
-<body>
-  <nav class="navbar">
-    <div class="nav-item"> <a href="#githubprofile"> Logo to github</a> </div>
-    <div class="nav-item"> <a href="#project"> Projects</a></div>
-    <div class="nav-item"> <a href="#contact"> Contact</a> </div>
-    <div class="nav-item"> <a href="#about"> About </a></div>
-  </nav>
-    
-  <div id="particle"></div>
-    
+    <div id="particle"></div>
     <div class="typewriter-container">
-      <pre id="typewriter">
-        <span class="let-highlight">let</span> Salvatore = {
-            occupation: <span class="string-highlight">'Web Developer'</span>,
-            type: <span class="string-highlight">'Fullstack'</span>,
-            location: <span class="string-highlight">'Earth'</span>,
-            skils:[<span class="string-highlight">'Ruby on Rails'</span>,<span class="string-highlight">'Javascript'</span>,
-                   <span class="string-highlight">'HTML'</span>,<span class="string-highlight">'Ruby'</span>,<span class="string-highlight">'React'</span>,<span class="string-highlight">'Redux'</span>,<span class="string-highlight">'CSS'</span>,
-                   <span class="string-highlight">'Git'</span>,<span class="string-highlight">'Heroku'</span>,<span class="string-highlight">'CLI'</span>,<span class="string-highlight">'Ubuntu'</span>]
-                        }; 
-      </pre>
-      </div>
-
-    <section class="hero-section">
-    <h1>Turn on your ideas</h1>
-    <div class="video-container">
-      <video muted loop src="light.mp4" >
-      </video>
+  <pre id="typewriter">
+  <span class="let-highlight">let</span> Salvatore = {
+      occupation: <span class="string-highlight">'Web Developer'</span>,
+      type: <span class="string-highlight">'Fullstack'</span>,
+      location: <span class="string-highlight">'Earth'</span>,
+      skills:[<span class="string-highlight">'Ruby on Rails'</span>,<span class="string-highlight">'Javascript'</span>,
+              <span class="string-highlight">'HTML'</span>,<span class="string-highlight">'Ruby'</span>,<span class="string-highlight">'React'</span>,<span class="string-highlight">'Redux'</span>,<span class="string-highlight">'CSS'</span>,
+              <span class="string-highlight">'Git'</span>,<span class="string-highlight">'Heroku'</span>,<span class="string-highlight">'CLI'</span>,<span class="string-highlight">'Ubuntu'</span>]
+                  }; 
+  </pre>
     </div>
-    </section>
 
-
-  <section class="project" id='project'>
-    <h2>My Project</h2>
-    
-    <article>
-      <div>
-        <i class="fas fa-cogs fa-10x"></i>
+    <section class="project" id="project">
+      <div class="neumorphism project-card">
+        <div class="card-title">
+          <h2>What i can do...</h2>
+        </div>
       </div>
-      <h2>
-        Help <strong>companies</strong>, <strong>organizations</strong>, and
-        especially <strong>YOU</strong> enhance your business
-      </h2>
-    </article>
 
+      <article>
+        <div class="icon neumorphism">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <div>
+          <h2 class="neumorphism">
+            Help <strong>companies</strong>,<strong>organizations</strong>, and
+            <strong>YOU</strong> enhance your business
+          </h2>
+        </div>
+      </article>
 
-    <article>
-      <i class="fab fa-html5 fa-2x"></i>
-      <h2>Design attractive Web Page</h2>
-    </article>
-    <article>
-      <i class="far fa-gem fa-2x"></i>
-      <h2>Code useful Ruby and Ruby on Rails applications</h2>
-    </article>
-    <article>
-      <i class="fab fa-css3-alt fa-2x"></i>
-      <h2>Use latest CSS3 practices to deliver stunning products</h2>
-    </article>
-  </section>
+      <article class="inverse">
+        <div class="icon neumorphism">
+          <i class="fab fa-html5 fa-10x"></i>
+        </div>
+        <div>
+          <h2 class="neumorphism">
+            Design attractive <strong>Web Pages</strong> 
+          </h2>
+        </div>
+      </article>
 
-  <script src="https://kit.fontawesome.com/687ce9f8b2.js" crossorigin="anonymous"></script>
-  
-  <!-- <script src="typewriting.js"></script> -->
-  <!-- <script src="particle.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"
-  integrity="sha512-rMaqGbYalDaQz0lWNF2L8DHPtf4NW+gSZomExS0LcsNyRS4Rmj21+dt97XfXCZE/E569eX72Bh//Jt1EpStgiA=="
-  crossorigin="anonymous"></script>
+      <article>
+        <div class="icon neumorphism">
+          <i class="fas fa-gem fa-10x"></i>
+        </div>
+        <div>
+          <h2 class="neumorphism">
+            Code useful <strong> Ruby</strong> and 
+            <strong> Ruby on Rails </strong>applications
+          </h2>
+        </div>
+      </article>
+      
+            <article class="inverse">
+              <div class="icon neumorphism">
+                <i class="fab fa-css3-alt fa-10x"></i>
+              </div>
+              <div>
+                <h2 class="neumorphism">
+                  Use latest <strong> CSS3 </strong>practices to deliver stunning products
+                </Use>
+              </div>
+            </article>
 
-</body>
+      <article>
+        <div class="icon neumorphism">
+          <i class="fas fa-cloud fa-10x"></i>
+        </div>
+        <div>
+          <h2 class="neumorphism">
+            Deploy your product in the <strong> Cloud </strong>to be more accessible and efficient
+          </Use>
+        </div>
+      </article>
 
+      <div class="masonry-wrapper">
+        <div class="neumorphism project-card">
+          <div class="card-title">
+            <h2>Responsive images gallery</h2>
+          </div>
+        </div>
+        <div class="masonry">
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/325?image=100" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/450?image=200" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/280?image=300" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/300?image=800" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/280?image=900" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/480?image=925" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/550?image=950" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/600?image=1000" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/325?image=25" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/450?image=50" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/280?image=75" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/540?image=100" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/380?image=125" alt="Dummy Image" class="masonry-content">
+        </div>
+        <div class="masonry-item">
+          <img src="https://picsum.photos/450/300?image=161" alt="Dummy Image" class="masonry-content">
+        </div>
+      </div>
+      </div>
+      <section class="hero-section">
+        <h1>Turn on your ideas</h1>
+        <div class="video-container">
+          <video autoplay muted loop src="light.mp4"></video>
+        </div>
+      </section>
+      
+      <script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/687ce9f8b2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="typewriting.js"></script>
+    <script src="particle.js"></script>
+
+<script src="gallery.js"></script>  
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"
+      integrity="sha512-rMaqGbYalDaQz0lWNF2L8DHPtf4NW+gSZomExS0LcsNyRS4Rmj21+dt97XfXCZE/E569eX72Bh//Jt1EpStgiA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
