@@ -1,6 +1,34 @@
 @import "config";
 
-.section {
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(214, 214, 214);
+
+  :first-child {
+    justify-content: flex-start;
+    // color: blue;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    padding: 1rem;
+
+    a {
+      text-decoration: none;
+      color: #a3a3a3;
+    }
+  }
+}
+
+// .hero-section {
+//   display: flex;
+//   flex-direction: row;
+//   height: 100vh;
+// }
+
+.hero-section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -8,20 +36,22 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
   h1 {
     text-align: center;
     font-size: 3rem;
     z-index: 1;
-    font-family: "Ubuntu";
-    background: rgba(255, 255, 255, 0.507);
+    font-family: monospace, "Ubuntu";
+    background: #fff8;
     padding: 1rem;
-    // margin: 2rem;
   }
+
   .video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
+
     video {
       width: 100vw;
       height: 100%;
@@ -29,12 +59,11 @@
   }
 }
 
-
-.header {
+.project {
   display: grid;
-    place-items: center;
+  place-items: center;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   article {
     width: 20rem;
     height: 15rem;
@@ -42,16 +71,62 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    //   text-align: center;
+    text-align: center;
     border: 1px solid;
-    padding: 2rem;
+    padding: 1.5rem;
     margin: 2rem;
     h2 {
       color: rgb(139, 139, 139);
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
+
     i {
+      display: block;
       color: yellow;
     }
   }
+}
+
+//typewriting animation
+
+.typewriter-container {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.let-highlight {
+  color: rgb(95, 121, 191);
+}
+
+.string-highlight {
+  color: rgb(212, 31, 248);
+}
+
+#typewriter {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 900;
+  font-family: monospace, "Courier New";
+  color: white;
+
+  &::after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes blink {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

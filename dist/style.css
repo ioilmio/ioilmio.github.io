@@ -5,6 +5,8 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid red;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,7 +17,34 @@ strong {
   color: silver;
 }
 
-.section {
+.navbar {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #d6d6d6;
+}
+
+.navbar :first-child {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: auto;
+}
+
+.navbar .nav-item {
+  padding: 1rem;
+}
+
+.navbar .nav-item a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+.hero-section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -31,37 +60,37 @@ strong {
   overflow: hidden;
 }
 
-.section h1 {
+.hero-section h1 {
   text-align: center;
   font-size: 3rem;
   z-index: 1;
-  font-family: "Ubuntu";
-  background: rgba(255, 255, 255, 0.507);
+  font-family: monospace, "Ubuntu";
+  background: #fff8;
   padding: 1rem;
 }
 
-.section .video-container {
+.hero-section .video-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
 }
 
-.section .video-container video {
+.hero-section .video-container video {
   width: 100vw;
   height: 100%;
 }
 
-.header {
+.project {
   display: -ms-grid;
   display: grid;
   place-items: center;
   gap: 1rem;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(600px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
-.header article {
+.project article {
   width: 20rem;
   height: 15rem;
   display: -webkit-box;
@@ -77,16 +106,64 @@ strong {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  text-align: center;
   border: 1px solid;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 2rem;
 }
 
-.header article h2 {
+.project article h2 {
   color: #8b8b8b;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header article i {
+.project article i {
+  display: block;
   color: yellow;
+}
+
+.typewriter-container {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.let-highlight {
+  color: #5f79bf;
+}
+
+.string-highlight {
+  color: #d41ff8;
+}
+
+#typewriter {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 900;
+  font-family: monospace, "Courier New";
+  color: white;
+}
+
+#typewriter::after {
+  content: "|";
+  -webkit-animation: blink 500ms linear infinite alternate;
+          animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
