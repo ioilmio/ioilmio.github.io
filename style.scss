@@ -64,6 +64,7 @@
   place-items: center;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+
   article {
     width: 20rem;
     height: 15rem;
@@ -75,6 +76,7 @@
     border: 1px solid;
     padding: 1.5rem;
     margin: 2rem;
+
     h2 {
       color: rgb(139, 139, 139);
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
