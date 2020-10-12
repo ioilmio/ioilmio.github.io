@@ -1,0 +1,78 @@
+@import "config";
+
+.navbar {
+  background-color: $dark-bg;
+  display: flex;
+  justify-content: flex-end;
+  font-family: monospace, "Courier New";
+  color: $text-color;
+
+  :first-child {
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    padding: 1rem;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}
+
+//typewriting animation
+
+.typewriter-container {
+  height: 80vh;
+  position: absolute;
+  top: 15%;
+}
+
+.let-highlight {
+  color: rgb(95, 121, 191);
+}
+
+.string-highlight {
+  color: rgb(212, 31, 248);
+}
+
+#typewriter {
+  font-size: 2.5vw;
+  margin: 0;
+  font-weight: 900;
+  font-family: monospace, "Courier New";
+  color: white;
+}
+.caret::after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

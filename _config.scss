@@ -2,11 +2,21 @@ $text-color: rgb(151, 151, 151);
 $bg-color: #474747;
 $dark-bg :rgb(0, 0, 0);
 
+html {
+  scroll-behavior: smooth;
+}
+
 @mixin center($direction, $align, $justify) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;
   justify-content: $justify;
+}
+
+@mixin text ($size){
+  font-size: $size;
+  color: $text-color;
+  font-family: monospace;
 }
 
 h2 {
@@ -37,5 +47,57 @@ body {
 }
 
 strong {
-  color: rgb(192, 192, 192);
+  // color: rgb(192, 192, 192);
+  color: $dark-bg;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top:0;
+}
+.navbar {
+  background-color: $dark-bg;
+  display: flex;
+  justify-content: flex-end;
+  font-family: monospace, "Courier New";
+  color: $text-color;  
+
+  :first-child {
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    padding: 1rem;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}
+
+
+
+.footer {
+  position: fixed;
+  bottom:0;
+  z-index: 1;
+  background-color: $dark-bg;
+  width: 100%;
+  height: 4vw;
+  color: $text-color;
+  @include center(center, center,space-around);
+  
+  .footer-icon {
+    text-align: center;
+    font-size: 1rem;
+  }
 }

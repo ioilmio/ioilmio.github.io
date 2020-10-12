@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio v0.2</title>
+    <title>Portfol_io.ilmio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -14,32 +14,25 @@
 
   <body>
     <nav class="navbar">
-      <div class="nav-item"><a href="#githubprofile"> Logo to github</a></div>
-      <div class="nav-item"><a href="#project"> Projects</a></div>
-      <div class="nav-item"><a href="#contact"> Contact</a></div>
-      <div class="nav-item"><a href="#about"> About </a></div>
+      <div class="nav-item"><a href="https://github.com/ioilmio"> <img src="./dist/images/text10.png" alt="logo"> </a></div>
+      <div class="nav-item"><a href="./projects.html"> Projects</a></div>
+      <div class="nav-item"><a href="./contacts.html"> Contact</a></div>
+      <div class="nav-item"><a href="./about.html"> About </a></div>
     </nav>
-
-    <div id="particle"></div>
-    <div class="typewriter-container">
-  <pre id="typewriter">
-  <span class="let-highlight">let</span> Salvatore = {
-      occupation: <span class="string-highlight">'Web Developer'</span>,
-      type: <span class="string-highlight">'Fullstack'</span>,
-      location: <span class="string-highlight">'Earth'</span>,
-      skills:[<span class="string-highlight">'Ruby on Rails'</span>,<span class="string-highlight">'Javascript'</span>,
-              <span class="string-highlight">'HTML'</span>,<span class="string-highlight">'Ruby'</span>,<span class="string-highlight">'React'</span>,<span class="string-highlight">'Redux'</span>,<span class="string-highlight">'CSS'</span>,
-              <span class="string-highlight">'Git'</span>,<span class="string-highlight">'Heroku'</span>,<span class="string-highlight">'CLI'</span>,<span class="string-highlight">'Ubuntu'</span>]
-                  }; 
-  </pre>
-    </div>
+  
+    <section class="hero-section" id="top">
+      <h1>Turn on your ideas</h1>
+      <div class="video-container">
+        <video autoplay muted loop src="light.mp4"></video>
+      </div>
+    </section>
 
     <section class="project" id="project">
-      <div class="neumorphism project-card">
+      <header class="neumorphism project project-card">
         <div class="card-title">
-          <h2>What i can do...</h2>
+          <h1>What can i do...</h1>
         </div>
-      </div>
+    </header>
 
       <article>
         <div class="icon neumorphism">
@@ -83,7 +76,7 @@
               <div>
                 <h2 class="neumorphism">
                   Use latest <strong> CSS3 </strong>practices to deliver stunning products
-                </Use>
+                </h2>
               </div>
             </article>
 
@@ -94,82 +87,31 @@
         <div>
           <h2 class="neumorphism">
             Deploy your product in the <strong> Cloud </strong>to be more accessible and efficient
-          </Use>
+          </h2>
         </div>
       </article>
-
-      <div class="masonry-wrapper">
-        <div class="neumorphism project-card">
-          <div class="card-title">
-            <h2>Responsive images gallery</h2>
+      <footer class="footer">
+        <div>
+          <div class="footer-icon">
+           <a href="https://twitter.com/ioilmio" target="_blank" rel="noreferrer noreferrer"> <i class="fab fa-twitter fa-2x"></i></a>
           </div>
         </div>
-        <div class="masonry">
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/325?image=100" alt="Dummy Image" class="masonry-content">
+        <div class="footer-icon">
+         <a href="https://www.linkedin.com/in/illuminato-salvatore/" target="_blank" rel="noreferrer noreferrer"><i class="fab fa-linkedin fa-2x"></i></a> 
         </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/450?image=200" alt="Dummy Image" class="masonry-content">
+        <div class="footer-icon">
+          <div><a href="#top"><i class="fas fa-chevron-up fa-2x"></i></a></div>
         </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/280?image=300" alt="Dummy Image" class="masonry-content">
+                <div class="footer-icon">
+                  <a href="https://github.com/ioilmio" target="_blank" rel="noreferrer noreferrer"><i class="fab fa-github fa-2x"></i></a>               </div>
+        <div class="footer-icon">
+          &copy;2020
         </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/300?image=800" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/280?image=900" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/480?image=925" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/550?image=950" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/600?image=1000" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/325?image=25" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/450?image=50" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/280?image=75" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/540?image=100" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/380?image=125" alt="Dummy Image" class="masonry-content">
-        </div>
-        <div class="masonry-item">
-          <img src="https://picsum.photos/450/300?image=161" alt="Dummy Image" class="masonry-content">
-        </div>
-      </div>
-      </div>
-      <section class="hero-section">
-        <h1>Turn on your ideas</h1>
-        <div class="video-container">
-          <video autoplay muted loop src="light.mp4"></video>
-        </div>
-      </section>
+    </footer>
       
-      <script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <script
       src="https://kit.fontawesome.com/687ce9f8b2.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="typewriting.js"></script>
-    <script src="particle.js"></script>
-
-<script src="gallery.js"></script>  
-  <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"
-      integrity="sha512-rMaqGbYalDaQz0lWNF2L8DHPtf4NW+gSZomExS0LcsNyRS4Rmj21+dt97XfXCZE/E569eX72Bh//Jt1EpStgiA=="
       crossorigin="anonymous"
     ></script>
   </body>

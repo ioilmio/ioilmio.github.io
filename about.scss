@@ -1,0 +1,31 @@
+@import "config";
+
+
+.experiment {
+    position: absolute;
+    top: 20%;
+    margin: 0 5vw;
+    
+    .pic {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        img {
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            border-radius: 25px;
+            float: left;
+        }
+    }
+    .bio {
+        margin: 0 auto ;
+        @include center(row, center, space-around);
+
+    h3 {
+      margin: 5vw 5vw;
+      color: $text-color;
+      background-color: transparent;
+    }
+  }
+}
