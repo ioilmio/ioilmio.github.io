@@ -13,21 +13,20 @@ html {
   justify-content: $justify;
 }
 
-@mixin text ($size){
+@mixin text ($size) {
   font-size: $size;
   color: $text-color;
   font-family: monospace;
 }
-
 
 .logo {
   margin-left: 1.5rem;
   transition: scale 0.55s ease-in-out;
 }
 
-.logo:hover{ 
-    scale: 1.5;
-    transition: scale 0.55s ease-in-out;
+.logo:hover {
+  scale: 1.5;
+  transition: scale 0.55s ease-in-out;
 }
 
 h2 {
@@ -70,17 +69,17 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 2;
-  top:0;
+  top: 0;
   overflow: hidden;
-
 }
+
 .navbar {
   background-color: $dark-bg;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-family: monospace, "Courier New";
-  color: $text-color;  
+  color: $text-color;
 
   :first-child {
     justify-content: flex-start;
@@ -97,37 +96,36 @@ nav {
   }
 }
 
-
-
 .footer {
   position: fixed;
-  bottom:0;
+  bottom: 0;
   z-index: 1;
   background-color: $dark-bg;
   width: 100%;
   height: 4vw;
   color: $text-color;
+
   @include center(center, center, space-around);
-  
+
   .footer-icon {
     text-align: center;
-
   }
+
   .fa-twitter:hover {
     color: #00aced;
     box-shadow: 0 0 15px #00aced;
     transition: all 0.5s ease;
-
   }
+
   .fa-linkedin:hover {
     color: #0077b5;
     box-shadow: 0 0 15px #0077b5;
     transition: all 0.5s ease;
   }
+
   .fa-github:hover {
-    color: #dddddd;
-    box-shadow: 0 0 15px #dddddd;
+    color: #ddd;
+    box-shadow: 0 0 15px #ddd;
     transition: all 0.5s ease;
   }
-  
 }

@@ -1,6 +1,6 @@
 @import "config";
 
-//video 
+//video
 
 .hero-section {
   position: relative;
@@ -62,13 +62,14 @@
     padding: 5vw;
     margin: 5rem 1rem;
 
-  .icon {
-    width: 50%;
-    height: auto;
-    // padding: 1rem;
-    margin: 0 auto;
-    @include center(center,center,center);
-  }
+    .icon {
+      width: 50%;
+      height: auto;
+      // padding: 1rem;
+      margin: 0 auto;
+
+      @include center(center,center,center);
+    }
 
     h2 {
       margin: 2rem 2rem;
@@ -93,5 +94,3 @@
     flex-direction: row-reverse;
   }
 }
-
-

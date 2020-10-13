@@ -7,14 +7,23 @@
   },
   "extends": ["development"],
   "formatters": ["stylish"],
-  "hints": [
+  "hints": 
+     {
+    "no-protocol-relative-urls": "error",
+    },[
     "button-type",
     "disown-opener",
     "html-checker",
     "meta-charset-utf-8",
     "meta-viewport"
   ],
-     "browserslist": [
-       "default"
-    ]
+   "compat-api/css": ["error", {
+            "ignore": "all",
+        }],
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 }

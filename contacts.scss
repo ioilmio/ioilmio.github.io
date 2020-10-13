@@ -1,5 +1,6 @@
 @import "config";
-*{
+
+* {
   background-color: $dark-bg;
 }
 
@@ -48,6 +49,7 @@
   font-family: monospace, "Courier New";
   color: white;
 }
+
 .caret::after {
   content: "|";
   animation: blink 500ms linear infinite alternate;
@@ -57,6 +59,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -66,6 +69,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -75,6 +79,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
