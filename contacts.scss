@@ -1,4 +1,7 @@
 @import "config";
+*{
+  background-color: $dark-bg;
+}
 
 .navbar {
   background-color: $dark-bg;

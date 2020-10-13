@@ -2,6 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.logo {
+  margin-left: 1.5rem;
+  -webkit-transition: scale 0.55s ease-in-out;
+  transition: scale 0.55s ease-in-out;
+}
+
+.logo:hover {
+  scale: 1.5;
+  -webkit-transition: scale 0.55s ease-in-out;
+  transition: scale 0.55s ease-in-out;
+}
+
 h2 {
   color: #474747;
   text-shadow: 1px 1px #cecece;
@@ -42,6 +54,7 @@ nav {
   width: 100%;
   z-index: 2;
   top: 0;
+  overflow: hidden;
 }
 
 .navbar {
@@ -52,6 +65,9 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: monospace, "Courier New";
   color: #979797;
 }
@@ -96,7 +112,34 @@ nav {
 
 .footer .footer-icon {
   text-align: center;
-  font-size: 1rem;
+}
+
+.footer .fa-twitter:hover {
+  color: #00aced;
+  -webkit-box-shadow: 0 0 15px #00aced;
+          box-shadow: 0 0 15px #00aced;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer .fa-linkedin:hover {
+  color: #0077b5;
+  -webkit-box-shadow: 0 0 15px #0077b5;
+          box-shadow: 0 0 15px #0077b5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer .fa-github:hover {
+  color: #dddddd;
+  -webkit-box-shadow: 0 0 15px #dddddd;
+          box-shadow: 0 0 15px #dddddd;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+* {
+  overflow: hidden;
 }
 
 .experiment {
@@ -135,8 +178,17 @@ nav {
       justify-content: space-around;
 }
 
+.experiment .bio .profile {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
 .experiment .bio h3 {
-  margin: 5vw 5vw;
+  font-size: 1.5vw;
   color: #979797;
+  font-family: monospace;
+  margin: 5vw 5vw;
+  color: white;
   background-color: transparent;
 }

@@ -55,19 +55,17 @@
 }
 
 .project {
-  // margin-bottom: 5vw;
   article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 5vw;
     margin: 5rem 1rem;
-    border-bottom: 1px solid $text-color;
 
   .icon {
     width: 50%;
     height: auto;
-    padding: 1rem;
+    // padding: 1rem;
     margin: 0 auto;
     @include center(center,center,center);
   }
