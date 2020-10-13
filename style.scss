@@ -1,6 +1,8 @@
 @import "config";
 
-.section {
+//video
+
+.hero-section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -8,20 +10,25 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
   h1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3vw;
     z-index: 1;
-    font-family: "Ubuntu";
-    background: rgba(255, 255, 255, 0.507);
+    font-family: monospace, "Ubuntu";
+    background: #fff8;
     padding: 1rem;
-    // margin: 2rem;
   }
+
   .video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
+
     video {
       width: 100vw;
       height: 100%;
@@ -29,29 +36,61 @@
   }
 }
 
+//card section
 
-.header {
-  display: grid;
-    place-items: center;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.project-card {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+
+  .card-title h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin: 1rem auto;
+    color: $text-color;
+    text-shadow: 0 1px 0 $dark-bg;
+    text-shadow: 0 -1px 0 $dark-bg;
+    font-family: "Ubuntu", monospace;
+  }
+}
+
+.project {
   article {
-    width: 20rem;
-    height: 15rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    //   text-align: center;
-    border: 1px solid;
-    padding: 2rem;
-    margin: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vw;
+    margin: 5rem 1rem;
+
+    .icon {
+      width: 50%;
+      height: auto;
+      // padding: 1rem;
+      margin: 0 auto;
+
+      @include center(center,center,center);
+    }
+
     h2 {
+      margin: 2rem 2rem;
+      font-size: 2vw;
+      padding: 5rem;
+      word-wrap: normal;
       color: rgb(139, 139, 139);
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-shadow: 0 1px 0 $dark-bg;
+      text-shadow: 0 -1px 0 $dark-bg;
+      font-family: monospace;
     }
+
     i {
-      color: yellow;
+      display: block;
+      color: $text-color;
+      font-size: 10vw;
     }
+  }
+
+  .inverse {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }

@@ -3,43 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio v0.1</title>
+    <title>Portfol_io.ilmio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./dist/style.css" />
   </head>
+  <script src="info.js"></script>
   <body>
-    <section class="section">
+    <nav class="navbar">
+      <div class="nav-item logo"><a href="https://github.com/ioilmio"> <img src="./dist/images/text10.png" alt="logo"> </a></div>
+      <div class="nav-item"><a href="./projects.html"> Projects</a></div>
+      <div class="nav-item"><a href="./contacts.html"> Contact</a></div>
+      <div class="nav-item"><a href="./about.html"> About </a></div>
+    </nav>
+  
+    <section class="hero-section" id="top">
       <h1>Turn on your ideas</h1>
       <div class="video-container">
-        <video autoplay loop muted>
-          <source src="light.mp4" type="video/mp4" />
-        </video>
+        <video autoplay muted loop src="light.mp4"></video>
       </div>
     </section>
-    <section class="header">
+
+    <section class="project" id="project">
+      <header class="neumorphism project project-card">
+        <div class="card-title">
+          <h1>What can i do...</h1>
+        </div>
+    </header>
+
       <article>
-        <i class="fas fa-cogs fa-2x"></i>
-        <h2>
-          Help <strong>companies</strong>, <strong>organizations</strong>, and
-          especially <strong>YOU</strong> enhance you business
-        </h2>
+        <div class="icon neumorphism">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <div>
+          <h2 class="neumorphism">
+            Help <strong>companies</strong>,<strong>organizations</strong>, and
+            <strong>YOU</strong> enhance your business
+          </h2>
+        </div>
       </article>
+
+      <article class="inverse">
+        <div class="icon neumorphism">
+          <i class="fab fa-html5 fa-10x"></i>
+        </div>
+        <div>
+          <h2 class="neumorphism">
+            Design attractive <strong>Web Pages</strong> 
+          </h2>
+        </div>
+      </article>
+
       <article>
-        <i class="fab fa-html5 fa-2x"></i>
-        <h2>Code and style attractive Web Page</h2>
+        <div class="icon neumorphism">
+          <i class="fas fa-gem fa-10x"></i>
+        </div>
+        <div>
+          <h2 class="neumorphism">
+            Code useful <strong> Ruby</strong> and 
+            <strong> Ruby on Rails </strong>applications
+          </h2>
+        </div>
       </article>
+      
+            <article class="inverse">
+              <div class="icon neumorphism">
+                <i class="fab fa-css3-alt fa-10x"></i>
+              </div>
+              <div>
+                <h2 class="neumorphism">
+                  Use latest <strong> CSS3 </strong>practices to deliver stunning products
+                </h2>
+              </div>
+            </article>
+
       <article>
-        <i class="far fa-gem fa-2x"></i>
-        <h2>Code useful and unique Ruby applications</h2>
+        <div class="icon neumorphism">
+          <i class="fas fa-cloud fa-10x"></i>
+        </div>
+        <div>
+          <h2 class="neumorphism">
+            Deploy your product in the <strong> Cloud </strong>to be more accessible and efficient
+          </h2>
+        </div>
       </article>
-      <article>
-        <i class="fab fa-css3-alt fa-2x"></i>
-        <h2>Use latest CSS3 to deliver stunnig products</h2>
-      </article>
-    </section>
+      <footer class="footer">
+        <div>
+          <div class="footer-icon">
+           <a href="https://twitter.com/ioilmio" target="_blank" rel="noopener noreferrer" aria-label="twitter link"> <i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="footer-icon">
+         <a href="https://www.linkedin.com/in/illuminato-salvatore/" target="_blank" rel="noopener noreferrer" aria-label="linkedin link"><i class="fab fa-linkedin fa-2x"></i></a> 
+        </div>
+        <div class="footer-icon">
+          <div><a href="#top" aria-label="go to the top"><i class="fas fa-chevron-up fa-2x"></i></a></div>
+        </div>
+                <div class="footer-icon">
+                  <a href="https://github.com/ioilmio" target="_blank" rel="noopener noreferrer" aria-label="github link"><i class="fab fa-github fa-2x"></i></a>               </div>
+        <div class="footer-icon">
+          &copy;2020
+        </div>
+    </footer>
+      
+
     <script
       src="https://kit.fontawesome.com/687ce9f8b2.js"
       crossorigin="anonymous"

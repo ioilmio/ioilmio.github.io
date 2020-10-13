@@ -3,3 +3,4 @@ linters:
 files:
   ignore:
     - 'bower_components/*'
+
