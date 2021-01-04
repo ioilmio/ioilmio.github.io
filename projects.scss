@@ -1,56 +1,59 @@
 @import "config";
 
-* {
-  border: 1px solid  transparent;
-}
+// * {
+//   border: 1px solid red;
+// }
 
-.project {
-  width: 50%;
-  margin: 14vh auto;
-
-  h2 {
-    text-align: center;
-    font-size: 3vw;
-    margin: 1rem;
-    padding: 1rem;
-    color: $text-color;
-    text-shadow: 0 1px 0 $dark-bg;
-    text-shadow: 0 -1px 0 $dark-bg;
-    font-family: "Ubuntu", monospace;
-  }
+.card-title {
+  width: 30%;
+  text-align: center;
+  font-size: 2vw;
+  margin: 1rem;
+  padding: 1rem;
+  color: $text-color;
+  text-shadow: 0 1px 0 $dark-bg;
+  text-shadow: 0 -1px 0 $dark-bg;
+  font-family: "Ubuntu", monospace;
 }
 
 // gallery
 
-.masonry-wrapper {
-  padding: 1.5em;
-  max-width: 90%;
-  margin: 10vh auto 14vh;
-}
-
-.masonry {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1rem;
-  grid-auto-rows: 0;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 3rem;
 }
 
-.masonry-item,
-.masonry-content {
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
+.project-card {
+  background-color: $text-color;
   height: auto;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: "Ubuntu", monospace;
+  margin: 1rem;
+  .project-description {
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 1px solid black;
+    .project-title {
+      // color:$text-color;
+      border-bottom: 20px solid $text-color;
+    }
+  }
+  .project-img img {
+    width: 100%;
+  }
 }
-
-.masonry-item {
+// zoom effect
+.project-card {
   filter: drop-shadow(2px 2px 0 $dark-bg);
   transition: filter 0.25s ease-in-out;
   transition: scale 0.25s ease-in-out;
 }
 
-.masonry-item:hover {
+.project-card:hover {
   scale: 1.1;
   transition: scale 0.25s ease-in-out;
   z-index: 1;
