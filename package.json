@@ -1,0 +1,27 @@
+{
+  "name": "ioilmio.github.io",
+  "version": "1.0.0",
+  "description": "<img src=\"https://img.shields.io/badge/Hireable%20-Yes-blue.svg?style=plastic\" alt=\"I'm hireable\">",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioilmio/ioilmio.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ioilmio/ioilmio.github.io/issues"
+  },
+  "homepage": "https://github.com/ioilmio/ioilmio.github.io#readme",
+  "devDependencies": {
+    "hint": "^6.0.7",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2"
+  }
+}

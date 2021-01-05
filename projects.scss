@@ -33,29 +33,42 @@
   padding: 1rem;
   font-family: "Ubuntu", monospace;
   margin: 1rem;
+  filter: drop-shadow(2px 2px 0 $dark-bg);
+  transition: filter 0.25s ease-in-out;
+  transition: scale 0.25s ease-in-out;
+
+  &:hover {
+    scale: 1.1;
+    transition: scale 0.25s ease-in-out;
+    z-index: 1;
+    filter: drop-shadow(10px 5px 5px rgb(0, 0, 0));
+  }
+
   .project-description {
     padding: 1rem;
     margin: 1rem;
     border-bottom: 1px solid black;
+
     .project-title {
       // color:$text-color;
       border-bottom: 20px solid $text-color;
     }
   }
+
   .project-img img {
     width: 100%;
   }
 }
 // zoom effect
-.project-card {
-  filter: drop-shadow(2px 2px 0 $dark-bg);
-  transition: filter 0.25s ease-in-out;
-  transition: scale 0.25s ease-in-out;
-}
+// .project-card {
+//   filter: drop-shadow(2px 2px 0 $dark-bg);
+//   transition: filter 0.25s ease-in-out;
+//   transition: scale 0.25s ease-in-out;
+// }
 
-.project-card:hover {
-  scale: 1.1;
-  transition: scale 0.25s ease-in-out;
-  z-index: 1;
-  filter: drop-shadow(10px 5px 5px rgb(0, 0, 0));
-}
+// .project-card:hover {
+//   scale: 1.1;
+//   transition: scale 0.25s ease-in-out;
+//   z-index: 1;
+//   filter: drop-shadow(10px 5px 5px rgb(0, 0, 0));
+// }
