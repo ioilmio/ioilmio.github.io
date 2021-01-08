@@ -1,0 +1,60 @@
+@import "contacts";
+@import "about";
+@import "video";
+@import "config";
+
+//card section
+
+header{
+  height: auto;
+  margin: 2rem auto;
+  width: 50%;
+
+  .info-title h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin: 1rem auto;
+    // padding: 1rem;
+    color: $text-color;
+    text-shadow: 0 1px 0 $dark-bg;
+    text-shadow: 0 -1px 0 $dark-bg;
+    font-family: "Ubuntu", monospace;
+  }
+}
+
+.inverse {
+  @include center(row-reverse, center, center);
+}
+
+article {
+  @include center(row, center, center);
+}
+
+
+.icon {
+  @include center(row, center, space-around);
+  margin: auto;
+  i{
+
+    margin: 1vw 1vw;
+    padding: 2vw;
+    font-size: 5vw;
+  }
+}
+
+.info {
+  margin: 10vw 5vw;
+  padding: 3vw;
+  width: 60%;
+}
+
+h2 {
+  margin: 3vw;
+  text-align: center;
+  font-size: 2vw;
+  padding: 3vw;
+  color: $text-color;
+  text-shadow: 0 1px 0 $dark-bg;
+  text-shadow: 0 -1px 0 $dark-bg;
+  font-family: monospace;
+}

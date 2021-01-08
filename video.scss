@@ -1,0 +1,42 @@
+@import "config";
+
+.hero-section {
+  // align-items: center;
+  display: flex;
+  // flex-direction: row;
+  // height: 100vmax;
+  // justify-content: center;
+  // overflow: hidden;
+  // position: relative;
+  width: 100%;
+  height: auto;
+
+  h1 {
+    background: #fff8;
+    font-family: monospace, "Ubuntu";
+    font-size: 2vw;
+    margin-top: 3vw;
+    width: 50%;
+    left: 10%;
+    padding: 1rem;
+    position: relative;
+    position: absolute;
+    text-align: center;
+    // top: 30%;
+    z-index: 1;
+  }
+
+  .video-container {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100vw;
+    // height: 65vmax;
+    // overflow: hidden;
+
+    video {
+      width: 100vw;
+      // height: 100%;
+    }
+  }
+}

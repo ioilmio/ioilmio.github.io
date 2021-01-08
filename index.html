@@ -9,7 +9,7 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./dist/style.min.css" />
+    <link rel="stylesheet" href="./dist/index.min.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -35,59 +35,63 @@
 
   <body>
     <nav class="navbar">
-      <div class="nav-item logo">
+      <div class="nav-item">
         <a href="https://github.com/ioilmio">
-          <img src="./dist/images/text10.png" alt="logo" />
+          <img class="logo" src="./dist/images/text10.png" alt="logo" />
         </a>
       </div>
-      <div class="nav-item"><a href="./projects.html"> Projects</a></div>
-      <div class="nav-item"><a href="./contacts.html"> Contact</a></div>
-      <div class="nav-item"><a href="./about.html"> About </a></div>
+      <div class="nav-item">
+        <a href="./projects.html"> <em>Projects</em></a>
+      </div>
+      <div class="nav-item">
+        <a href="./contacts.html"> <em>Contact</em></a>
+      </div>
+      <div class="nav-item">
+        <a href="./about.html"> <em>About</em></a>
+      </div>
     </nav>
 
     <section class="hero-section" id="top">
-      <h1>Turn on your ideas</h1>
       <div class="video-container">
-        <video autoplay muted loop src="light.mp4"></video>
+        <h1>Turn on your ideas</h1>
+        <video muted loop src="light.mp4"></video>
       </div>
-    </section>
+    </section> 
 
-    <section class="project" id="project">
-      <header class="neumorphism project project-card">
-        <div class="card-title">
+   <section class="" id="info">
+      <header class="neumorphism info-card">
+        <div class="info-title">
           <h1>What can i do...</h1>
         </div>
       </header>
 
       <article>
-        <div class="icon neumorphism">
+        <div class="neumorphism icon">
           <i class="fas fa-cogs"></i>
         </div>
-        <div>
-          <h2 class="neumorphism">
-            Help <strong>companies</strong>,<strong>organizations</strong>, and
+        <div class="neumorphism info">
+          <h2>
+            Help <strong>companies</strong>, <strong>organizations</strong>, and
             <strong>YOU</strong> enhance your business
           </h2>
         </div>
       </article>
 
       <article class="inverse">
-        <div class="icon neumorphism">
-          <i class="fab fa-html5 fa-10x"></i>
+        <div class="neumorphism icon">
+          <i class="fab fa-html5"></i>
         </div>
-        <div>
-          <h2 class="neumorphism">
-            Design attractive <strong>Web Pages</strong>
-          </h2>
+        <div class="neumorphism info">
+          <h2>Design attractive <strong>Web Pages</strong></h2>
         </div>
       </article>
 
       <article>
         <div class="icon neumorphism">
-          <i class="fas fa-gem fa-10x"></i>
+          <i class="fas fa-gem"></i>
         </div>
-        <div>
-          <h2 class="neumorphism">
+        <div class="neumorphism info">
+          <h2>
             Code useful <strong> Ruby</strong> and
             <strong> Ruby on Rails </strong>applications
           </h2>
@@ -96,10 +100,10 @@
 
       <article class="inverse">
         <div class="icon neumorphism">
-          <i class="fab fa-css3-alt fa-10x"></i>
+          <i class="fab fa-css3-alt"></i>
         </div>
-        <div>
-          <h2 class="neumorphism">
+        <div class="neumorphism info">
+          <h2>
             Use latest <strong> CSS3 </strong>practices to deliver stunning
             products
           </h2>
@@ -108,16 +112,75 @@
 
       <article>
         <div class="icon neumorphism">
-          <i class="fas fa-cloud fa-10x"></i>
+          <i class="fab fa-js"></i>
         </div>
-        <div>
-          <h2 class="neumorphism">
-            Deploy your product in the <strong> Cloud </strong>to be more
-            accessible and efficient
+        <div class="neumorphism info">
+          <h2>
+            Build modern web using <strong> Javascript </strong> and
+            <strong>React</strong>
           </h2>
         </div>
       </article>
+
+      <article class="inverse">
+        <div class="icon neumorphism">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <divh2 class="neumorphism info">
+          <h2>
+            Deploy your product in the <strong> Cloud </strong>to be more
+            accessible and efficient
+          </h2>
+        </divh2>
+      </article>
     </section>
+
+    <header class="neumorphism info-card">
+      <div class="info-title">
+        <h1>About me</h1>
+      </div>
+    </header>
+    <div class="about-container">
+      <div id="particle"></div>
+      <section class="experiment">
+        <div class="bio">
+          <div class="pic">
+            <img src="./dist/images/me.jpeg" alt="" />
+          </div>
+          <div class="profile">
+            <h3>
+              I'm changing my career from being a bakery manager to a
+              professional remote software developing.
+              <br />
+              Since I was young I always tried to improve myself, and now I'm
+              starting this brand new journey, into a never-ending learning
+              experience, that I already know will fulfill me as individual and
+              benefit the company hiring me. If you have a cool idea worth
+              spreading contact me.
+            </h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="contact-container">
+
+      <div class="typewriter-container">
+        <pre id="typewriter">
+          <span class="let-highlight">let</span> ioilmio = {
+         location: <span class="string-highlight">'Earth'</span>,
+         Github: <a class="string-highlight" href="https://github.com/ioilmio?tab=repositories" target="_blank" rel="noopener noreferrer">@ioilmio</a>,
+         Linkedin: <a class="string-highlight" href="https://www.linkedin.com/in/illuminato-salvatore/" target="_blank" rel="noopener noreferrer">Connect to me!</a>,
+         Twitter: <a class="string-highlight" href="https://twitter.com/ioilmio" target="_blank" rel="noopener noreferrer">@ioilmio</a>,
+         Mail: <a class="string-highlight" href="mailto:illuminato.salvatore@gmail.com" target="_blank" rel="noopener noreferrer">Send me a mail</a>,
+         skills:[<span class="string-highlight">'Ruby on Rails'</span>,<span class="string-highlight">'Javascript'</span>,
+         <span class="string-highlight">'HTML'</span>,<span class="string-highlight">'Ruby'</span>,<span class="string-highlight">'React'</span>,<span class="string-highlight">'Redux'</span>,<span class="string-highlight">'CSS'</span>,
+         <span class="string-highlight">'Git'</span>,<span class="string-highlight">'Heroku'</span>,<span class="string-highlight">'CLI'</span>,<span class="string-highlight">'Ubuntu'</span>]
+         <span class="caret">};</span> 
+        </pre>
+      </div>
+    </div>
+      
+      
     <footer class="footer">
       <div>
         <div class="footer-icon">
@@ -159,6 +222,13 @@
       <div class="footer-icon">&copy;2020</div>
     </footer>
 
+    <script src="particle.js"></script>
+    <script src="typewriting.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"
+      integrity="sha512-rMaqGbYalDaQz0lWNF2L8DHPtf4NW+gSZomExS0LcsNyRS4Rmj21+dt97XfXCZE/E569eX72Bh//Jt1EpStgiA=="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/687ce9f8b2.js"
       crossorigin="anonymous"

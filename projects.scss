@@ -5,10 +5,10 @@
 // }
 
 .card-title {
-  width: 30%;
+  width: 50%;
   text-align: center;
-  font-size: 2vw;
-  margin: 1rem;
+  font-size: 3vw;
+  margin: 6rem auto 2rem;
   padding: 1rem;
   color: $text-color;
   text-shadow: 0 1px 0 $dark-bg;
@@ -20,26 +20,32 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 1rem;
+  place-content: center;
 }
 
 .project-card {
   background-color: $text-color;
   height: auto;
-  width: 350px;
+  width: 250px;
   overflow: hidden;
-  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
   padding: 1rem;
+  margin: 3vw;
   font-family: "Ubuntu", monospace;
-  margin: 1rem;
-  filter: drop-shadow(2px 2px 0 $dark-bg);
-  transition: filter 0.25s ease-in-out;
-  transition: scale 0.25s ease-in-out;
+  // margin: 1rem;
+  // filter: drop-shadow(5px 2px 0 $dark-bg);
+  transition: filter 0.55s ease-in-out;
+  transition: scale 0.55s ease-in-out;
 
   &:hover {
     scale: 1.1;
-    transition: scale 0.25s ease-in-out;
+    // transition: scale 0.25s ease-in-out;
+    transition: all 0.55s ease-in-out;
     z-index: 1;
     filter: drop-shadow(10px 5px 5px rgb(0, 0, 0));
   }
@@ -50,7 +56,6 @@
     border-bottom: 1px solid black;
 
     .project-title {
-      // color:$text-color;
       border-bottom: 20px solid $text-color;
     }
   }
@@ -59,16 +64,3 @@
     width: 100%;
   }
 }
-// zoom effect
-// .project-card {
-//   filter: drop-shadow(2px 2px 0 $dark-bg);
-//   transition: filter 0.25s ease-in-out;
-//   transition: scale 0.25s ease-in-out;
-// }
-
-// .project-card:hover {
-//   scale: 1.1;
-//   transition: scale 0.25s ease-in-out;
-//   z-index: 1;
-//   filter: drop-shadow(10px 5px 5px rgb(0, 0, 0));
-// }

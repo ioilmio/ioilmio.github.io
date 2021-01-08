@@ -1,35 +1,21 @@
 @import "config";
 
 * {
-  background-color: $dark-bg;
-}
-
-.navbar {
-  background-color: $dark-bg;
-  display: flex;
-  justify-content: flex-end;
-  font-family: monospace, "Courier New";
-  color: $text-color;
-
-  :first-child {
-    justify-content: flex-start;
-    margin-right: auto;
-  }
-
-  .nav-item {
-    padding: 1rem;
-
-    a {
-      text-decoration: none;
-      color: $text-color;
-    }
-  }
+  // background-color: $dark-bg;
 }
 
 //typewriting animation
 
+.contact-container {
+  position: relative;
+}
+
+.contact-container .typewriter-container {
+  position: absolute;
+}
+
 .typewriter-container {
-  height: 80vh;
+  height: 100%;
   position: absolute;
   top: 15%;
 }
@@ -43,7 +29,7 @@
 }
 
 #typewriter {
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   margin: 0;
   font-weight: 900;
   font-family: monospace, "Courier New";

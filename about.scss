@@ -1,45 +1,51 @@
 @import "config";
 
-* {
+.about-container {
+  position: relative;
+  // margin: 10rem;
   overflow: hidden;
 }
 
+.about-container #particle,
 .experiment {
   position: absolute;
-  top: 20%;
-  margin: 0 5vw;
+}
+
+.experiment {
+  position: relative;
+  margin: 4rem 5vw;
 
   .pic {
     width: 100%;
     height: auto;
     margin: 0 auto;
-
-    img {
-      margin: 0 auto;
-      width: 100%;
-      height: auto;
-      border-radius: 25px;
-      float: left;
-    }
   }
 
-  .bio {
-    margin: 0 auto;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    float: left;
+  }
+}
 
-    @include center(row, center, space-around);
+.bio {
+  margin: 0 auto;
 
-    .profile {
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 10px;
-      margin: 0 1rem;
-    }
+  @include center(row, center, space-around);
 
-    h3 {
-      @include text(1.5vw);
+  .profile {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: 1rem 1rem;
+  }
 
-      margin: 5vw 5vw;
-      color: white;
-      background-color: transparent;
-    }
+  h3 {
+    @include text(1.5vw);
+    padding: 1rem;
+
+    margin: 0 5vw;
+    color: white;
+    background-color: transparent;
   }
 }
