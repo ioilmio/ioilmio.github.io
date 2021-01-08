@@ -1,11 +1,12 @@
 @import "contacts";
 @import "about";
 @import "video";
+@import "projects";
 @import "config";
 
 //card section
 
-header{
+header {
   height: auto;
   margin: 2rem auto;
   width: 50%;
@@ -30,12 +31,12 @@ article {
   @include center(row, center, center);
 }
 
-
 .icon {
   @include center(row, center, space-around);
-  margin: auto;
-  i{
 
+  margin: auto;
+
+  i {
     margin: 1vw 1vw;
     padding: 2vw;
     font-size: 5vw;

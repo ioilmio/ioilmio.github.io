@@ -1,23 +1,9 @@
 @import "config";
 
-* {
-  // background-color: $dark-bg;
-}
-
 //typewriting animation
 
-.contact-container {
-  position: relative;
-}
-
-.contact-container .typewriter-container {
-  position: absolute;
-}
-
 .typewriter-container {
-  height: 100%;
-  position: absolute;
-  top: 15%;
+  height: 50vw;
 }
 
 .let-highlight {
@@ -29,7 +15,7 @@
 }
 
 #typewriter {
-  font-size: 3.5vw;
+  font-size: 3vw;
   margin: 0;
   font-weight: 900;
   font-family: monospace, "Courier New";

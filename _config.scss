@@ -58,11 +58,8 @@ a {
   text-decoration: none;
 }
 
-nav {
-  position: sticky;
-}
-
 .navbar {
+  position: sticky;
   align-items: center;
   background-color: $dark-bg;
   color: $text-color;

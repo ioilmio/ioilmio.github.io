@@ -2,7 +2,6 @@
 
 .about-container {
   position: relative;
-  // margin: 10rem;
   overflow: hidden;
 }
 
@@ -42,8 +41,8 @@
 
   h3 {
     @include text(1.5vw);
-    padding: 1rem;
 
+    padding: 1rem;
     margin: 0 5vw;
     color: white;
     background-color: transparent;
