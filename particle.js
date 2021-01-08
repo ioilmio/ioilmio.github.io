@@ -4,7 +4,7 @@ let maxParticles, particleBreakDistance, repelDist;
 let particles = [];
 
 function setup() {
-    canvas = createCanvas((windowWidth), windowHeight);
+    canvas = createCanvas((windowWidth), (windowHeight));
 
     console.log("Canvas Size :" + width + "x" + height);
     canvas.parent('particle');
@@ -12,7 +12,7 @@ function setup() {
     strokeWeight(2);
     stroke(255);
 
-    maxParticles = 120;
+    maxParticles = 200;
     repelDist = max(width, height)/8;
     particleBreakDistance = max(width, height) / 40;
     while (particles.length < maxParticles) {

@@ -1,0 +1,28 @@
+@import "config";
+
+.hero-section {
+  display: flex;
+  width: 100%;
+  height: auto;
+
+  h1 {
+    background: #fff8;
+    font-family: monospace, "Ubuntu";
+    font-size: 2vw;
+    margin-top: 3vw;
+    width: 50%;
+    left: 10%;
+    top: 20%;
+    padding: 1rem;
+    position: relative;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .video-container {
+    video {
+      width: 100vw;
+    }
+  }
+}

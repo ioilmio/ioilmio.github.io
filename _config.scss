@@ -1,55 +1,48 @@
 $text-color: rgb(151, 151, 151);
 $bg-color: #474747;
-$dark-bg :rgb(0, 0, 0);
+$dark-bg: rgb(0, 0, 0);
+$text-shadow: rgb(206, 206, 206);
+$neu-bg: #4c4c4c;
+$neu-bg-2: #404040;
+$box-shadow: #363636;
+$box-shadow-2: #585858;
+
+*,
+::after,
+::before {
+  // border: 1px solid rgb(202, 24, 24);
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 @mixin center($direction, $align, $justify) {
+  align-items: $align;
   display: flex;
   flex-direction: $direction;
-  align-items: $align;
   justify-content: $justify;
 }
 
-@mixin text ($size) {
-  font-size: $size;
+@mixin text($size) {
   color: $text-color;
   font-family: monospace;
-}
-
-.logo {
-  margin-left: 1.5rem;
-  transition: scale 0.55s ease-in-out;
-}
-
-.logo:hover {
-  scale: 1.5;
-  transition: scale 0.55s ease-in-out;
+  font-size: $size;
 }
 
 h2 {
   color: $bg-color;
-  text-shadow: 1px 1px rgb(206, 206, 206);
+  text-shadow: 1px 1px $text-shadow;
 }
 
 .neumorphism {
+  background: linear-gradient(225deg, $neu-bg, $neu-bg-2);
   border-radius: 21px;
-  background: linear-gradient(225deg, #4c4c4c, #404040);
-  box-shadow:
-    -9px 9px 17px #363636,
-    9px -9px 17px #585858;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  // border: 1px solid red;
-  overflow-x: hidden;
+  box-shadow: -9px 9px 17px $box-shadow, 9px -9px 17px $box-shadow-2;
 }
 
 body {
@@ -61,72 +54,109 @@ strong {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
-}
-
-nav {
-  // position: fixed;
-  position: sticky;
-  width: 100%;
-  // z-index: 2;
-  // top: 0;
-  // overflow: hidden;
+  text-decoration: none;
 }
 
 .navbar {
-  background-color: $dark-bg;
-  display: flex;
-  justify-content: flex-end;
+  position: sticky;
   align-items: center;
-  font-family: monospace, "Courier New";
+  background-color: $dark-bg;
   color: $text-color;
-
-  :first-child {
-    // justify-content: flex-start;
-    margin-right: auto;
-  }
+  display: flex;
+  font-family: monospace, "Courier New";
+  justify-content: space-evenly;
+  overflow: hidden;
 
   .nav-item {
     padding: 1rem;
 
+    .logo {
+      transition: all 1s ease-in-out;
+      height: 5vw;
+    }
+
+    .logo:hover {
+      transition: all 1s ease-in-out;
+      transform: rotateY(359deg);
+    }
+
     a {
-      text-decoration: none;
+      transition: all 0.5s ease;
       color: $text-color;
+      text-decoration: none;
+      font-size: 2vw;
+    }
+
+    a:hover {
+      text-shadow: -1px -1px 15px white;
+      color: white;
+      transition: all 0.5s ease;
     }
   }
 }
 
 .footer {
-  // position: fixed;
-  bottom: 0;
-  z-index: 1;
-  background-color: $dark-bg;
-  width: 100%;
-  height: 4vw;
-  color: $text-color;
-
   @include center(center, center, space-around);
+
+  background-color: $dark-bg;
+  color: $text-color;
+  height: auto;
+  width: 100%;
+  z-index: 1;
 
   .footer-icon {
     text-align: center;
+    margin: 1rem;
+    font-size: 2vw;
   }
 
-  .fa-twitter:hover {
-    color: #00aced;
-    box-shadow: 0 0 15px #00aced;
+  .fa-twitter {
     transition: all 0.5s ease;
+    padding: 0.5rem;
+
+    &:hover {
+      scale: 1.2;
+      box-shadow: 0 0 0 #00aced;
+      color: #00aced;
+      transition: all 0.5s ease;
+    }
   }
 
-  .fa-linkedin:hover {
-    color: #0077b5;
-    box-shadow: 0 0 15px #0077b5;
+  .fa-linkedin {
     transition: all 0.5s ease;
+    padding: 0.5rem;
+
+    &:hover {
+      scale: 1.2;
+      box-shadow: 0 0 0 #0a66c2;
+      color: #0a66c2;
+      transition: all 0.5s ease;
+    }
   }
 
-  .fa-github:hover {
-    color: #ddd;
-    box-shadow: 0 0 15px #ddd;
+  .fa-chevron-up {
+    padding: 0.5rem;
     transition: all 0.5s ease;
+
+    &:hover {
+      box-shadow: 0 0 0 white;
+      color: white;
+      scale: 1.2;
+      transform: translate(0, -5px);
+      transition: all 0.5s ease;
+    }
+  }
+
+  .fa-github {
+    padding: 0.5rem;
+    transition: all 0.5s ease;
+
+    &:hover {
+      scale: 1.2;
+      box-shadow: 0 0 0 #ddd;
+      color: #ddd;
+      transition: all 0.5s ease;
+    }
   }
 }

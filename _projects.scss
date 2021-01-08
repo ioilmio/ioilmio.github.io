@@ -1,0 +1,59 @@
+@import "config";
+
+.info-title {
+  text-align: center;
+
+  h1 {
+    color: $text-color;
+    text-shadow: 0 1px 0 $dark-bg;
+    text-shadow: 0 -1px 0 $dark-bg;
+    font-family: "Ubuntu", monospace;
+  }
+}
+
+// gallery
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 2vw auto;
+  place-content: center;
+}
+
+.project-card {
+  background-color: $text-color;
+  width: 350px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 5vw auto;
+  font-size: 22rem;
+  font-family: "Ubuntu", monospace;
+  color: $bg-color;
+  filter: drop-shadow(5px 2px 0 $dark-bg);
+  filter: drop-shadow(10px 5px 5px rgb(0, 0, 0));
+  transition: filter 0.55s ease-in-out;
+  transition: scale 0.55s ease-in-out;
+
+  &:hover {
+    scale: 1.1;
+    transition: all 0.55s ease-in-out;
+    z-index: 1;
+    filter: drop-shadow(10px 5px 5px rgb(0, 0, 0));
+  }
+
+  .project-description {
+    border-bottom: 1px solid black;
+    color: $bg-color;
+
+    .project-title {
+      color: $bg-color;
+    }
+  }
+
+  .project-img img {
+    width: 100%;
+  }
+}
