@@ -2,12 +2,23 @@
 
 .info-title {
   text-align: center;
+  padding-bottom: 0;
 
-  h1 {
+  h2 {
     color: $text-color;
     text-shadow: 0 1px 0 $dark-bg;
     text-shadow: 0 -1px 0 $dark-bg;
     font-family: "Ubuntu", monospace;
+    margin-bottom: 0;
+    padding-bottom: 0.5vw;
+    font-size: 3vw;
+  }
+
+  h5 {
+    font-family: "Ubuntu", monospace;
+    color: $text-color;
+    margin-bottom: 1vw;
+    margin-top: 0;
   }
 }
 
